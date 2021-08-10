@@ -3,9 +3,6 @@
   padding: 0px;
 }
 
-.navbar-collapse {
-  display: block;
-}
 .navbar-branch {
   margin-left: 130px;
 }
@@ -42,13 +39,37 @@
 }
 
 @media (max-width: 769px) and (min-width: 575px) {
+  #header {
+    height: 188px;
+    position: relative;
+    padding: 0px;
+  }
+
+  #header
   .navbar-expand-md .container-fluid {
     flex-wrap: wrap !important;
   }
 
+  #header
+  .navbar-branch {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #header
   .navbar-branch img {
     width: 300px;
     height: 61.74px;
+  }
+
+  .nav-item {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .nav-link:hover {
+    color: #17f117;
   }
 }
 
