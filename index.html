@@ -4,33 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style/css/index.css">
+    <title>HapoLearn</title>
+    <!-- import bootstrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">  
+    <link rel="stylesheet" href="./scss/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-        <header class="header">
-            <div>
-                <ul>
-                    <li class="header-logo">
-                        <a href="#">
-                            <img src="./style/css/img/Hapolearn_header.png" alt="HapoLearn">
-                        </a>
-                    </li>
-                    <li><a class="navbar" href="#">Home</a></li>
-                    <li><a class="navbar" href="#">ALL COURSE</a></li>
-                    <li><a class="navbar" href="#">Login/Register</a></li>
-                    <li><a class="navbar" href="#">Profile</a></li>
-                </ul>
+    <header id="header">
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="header-logo navbar-branch" href="#">
+                    <img src="./style/img/Hapolearn_header.png" alt="HapoLearn">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link active" href="">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">ALL COURSE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">LOGIN/REGISTER</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">PROFILE</a></li>
+                    </ul>
+                </div>
             </div>
-        </header>
+        </nav>
+    </header>
 
-        <div class="content">
-            <p>Đây là content</p>
-        </div>
+    <div class="content">
+        <p>Đây là content</p>
+    </div>
 
-        <div class="footer">
-            <p>Đây là footer</p>
-        </div>
+    <div class="footer">
+        <p>Đây là footer</p>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./javasript/main.js"></script>
 </body>
