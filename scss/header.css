@@ -37,7 +37,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 769px) and (min-width: 768px) {
+@media (max-width: 769px) {
   .navbar-expand-md .container-fluid {
     -ms-flex-wrap: wrap !important;
         flex-wrap: wrap !important;
