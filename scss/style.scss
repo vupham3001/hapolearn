@@ -1,15 +1,16 @@
 @import 'variable';
 @import 'header';
+@import 'banner';
 
 .content {
-    background-color: #ffff00;
-    height: 100px;
-    color: red;
+  background-color: #ffff00;
+  height: 100px;
+  color: red;
 }
 
 .footer {
-    background-color: #080707;
-    height: 100px;
-    color: #ffffff;
+  background-color: #080707;
+  height: 100px;
+  color: #ffffff;
 }
 
