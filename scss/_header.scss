@@ -29,13 +29,13 @@
 }
 
 .nav-link:hover {
-  background-color: #10e010;
-  color: #ffffff !important;
+  background-color: $navlink_color;
+  color: $white_color !important;
 }
 
 .nav-link:active {
-  background-color: #10e010 !important;
-  color: #ffffff !important;
+  background-color: $navlink_color !important;
+  color: $white_color !important;
 }
 
 .nav-toggler-icon {
@@ -74,7 +74,7 @@
   }
 
   .nav-link:hover {
-    color: #17f117;
+    color: $navlink_color;
   }
 }
 
