@@ -1,1 +1,4 @@
-backgorup/style/css/index.css
+*.log
+*.json
+*.map
+*.css
