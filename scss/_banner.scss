@@ -2,12 +2,12 @@
   position: relative;
   width: 100%;
   height: 655px;
-  font-family: UTM\ BryantLG;
+  font-family: $font_UTM_BryantLG;
 
   .background-hapolearn-banner {
     width: 100%;
     height: 100%;
-    background-image: url('../style/img/hapolearn-banner.png');
+    background-image: url('../assets/img/hapolearn-banner.png');
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -63,4 +63,3 @@
     border-radius: 35px;
   }
 }
-
