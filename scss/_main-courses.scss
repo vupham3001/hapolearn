@@ -105,8 +105,10 @@
 }
 
 @media (max-width: 769px) and (min-width: 576px) {
-  .card-img-top {
-    height: 131px !important;
+  .main-courses {
+    .card-img-top {
+      height: 131px ;
+    }
   }
 
   .card-body {
