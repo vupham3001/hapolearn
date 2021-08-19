@@ -46,6 +46,7 @@
     -webkit-line-clamp: 2;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+    text-align: center;
   }
 
   .btn-card-primary {
@@ -143,7 +144,7 @@
   }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 575px) {
   .main-courses {
     margin-top: 231px;
   }
@@ -165,8 +166,10 @@
     font-size: 18px !important;
   }
 
-  .extend-courses {
-    font-size: 22px;
-    line-height: 22px;
+  .main-courses {
+    .extend-courses {
+      font-size: 22px;
+      line-height: 22px;
+    }
   }
 }
