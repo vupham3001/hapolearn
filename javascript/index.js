@@ -1,4 +1,4 @@
-$('.carousel slide').slick({
+$('.carousel.slide').slick({
     dots: true,
     infinite: false,
     speed: 300,
@@ -18,7 +18,7 @@ $('.carousel slide').slick({
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToScroll: 1
         }
       },
     ]

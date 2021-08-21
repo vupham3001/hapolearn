@@ -20,7 +20,8 @@
     font-size: 25px;
     font-weight: 400;
     text-align: center;
-    margin-left: 20%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 3%;
   }
 
@@ -28,6 +29,7 @@
     margin-top: 6%;
 
     .content-feedback-slide {
+      text-align: start;
       width: 497px;
       height: 90px;
       font-size: 16px;
@@ -61,5 +63,75 @@
   .star {
     font-size: 14px;
     color: $star-color;
+  }
+
+  .btn-page {
+    position: absolute;
+    top: 45%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: $white_color;
+    border: 0.5px solid $boder-aroww-circle;
+  }
+
+  .btn-prev-page {
+    z-index: 2;
+    left: 0px;
+  }
+
+  .btn-next-page {
+    z-index: 2;
+    right: 0px;
+  }
+
+  .border-content {
+    border-radius: 10px;
+    border: 0.5px solid $boder-aroww-circle;
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+@media (max-width: 1140px) {
+  .feedback {
+    height: 519px;
+
+    .title-feedback {
+      font-size: 50px;
+      margin-top: 10%;
+    }
+
+    .content-feedback {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .feedback {
+    height: 435px;
+    width: 100%;
+
+    .title-feedback {
+      font-size: 40px;
+      margin-top: -30%;
+    }
+
+    .content-feedback {
+      font-size: 16px;
+      width: 100%;
+    }
+
+    .second {
+      .content-feedback-slide {
+        font-size: 14px;
+        width: 100%;
+      }
+
+      .avatar {
+        width: 45px;
+        height: 45px;
+      }
+    }
   }
 }
