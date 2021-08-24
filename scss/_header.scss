@@ -42,7 +42,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 769px) and (min-width: 575px) {
+@media (max-width: 769px) {
   .header {
     width: 100%;
     height: 188px;
@@ -87,12 +87,6 @@
   .navbar-toggler-icon {
     width: 18px;
     height: 23px;
-  }
-
-  .navbar-branch {
-    margin-left: auto;
-    margin-right: 235px;
-    padding: 0px;
   }
 
   .navbar-branch img {
