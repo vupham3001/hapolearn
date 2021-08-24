@@ -23,3 +23,9 @@ $('.feedback-slide').slick({
     },
   ]
 });
+
+$(document).ready(function(){
+  $(".login").click(function(){
+    $("#myModal").modal();
+  });
+});
