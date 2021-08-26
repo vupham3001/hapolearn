@@ -33,7 +33,7 @@ $(function() {
     $("#messenger").toggle("slow");
   });
 
-  $(".logo-messenger").click(function(){
+  $(".logo-messenger").click(function() {
     $("#messenger").slideToggle("slow");
   });
 });
