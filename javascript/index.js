@@ -24,14 +24,12 @@ $('.feedback-slide').slick({
   ]
 });
 
-$(document).ready(function(){
-  $(".login").click(function(){
+$(function() {
+  $(".login").click(function() {
     $("#myModal").modal();
   });
-});
 
-$(document).ready(function(){
-  $(".close-chatbox").click(function(){
+  $(".close-chatbox").click(function() {
     $("#messenger").toggle("slow");
   });
 
