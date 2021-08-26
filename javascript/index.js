@@ -29,3 +29,15 @@ $(document).ready(function(){
     $("#myModal").modal();
   });
 });
+
+$(document).ready(function(){
+  $(".close-chatbox").click(function(){
+    $("#messenger").toggle("slow");
+  });
+});
+
+$(document).ready(function(){
+  $(".logo-messenger").click(function(){
+    $("#messenger").slideToggle("slow");
+  });
+});
