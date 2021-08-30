@@ -5,6 +5,8 @@ $(function() {
     speed: 300,
     slidesToShow: 2,
     slidesToScroll: 1,
+    prevArrow: '<button class="slide-arrow prev-arrow"><i class="fas fa-angle-left"></i></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"><i class="fas fa-angle-right"></i></button>',
     responsive: [
       {
         breakpoint: 1024,
@@ -23,6 +25,14 @@ $(function() {
         }
       },
     ]
+  });
+
+  $(".footer-iconandlink").mouseover(function() {
+    $( "#imgContact", this ).removeClass("txt-hidden").addClass( "readmore");
+  });
+
+  $(".footer-iconandlink").mouseout(function() {
+    $( "#imgContact", this ).removeClass("readmore").addClass("txt-hidden");
   });
 
   $(".login").click(function() {

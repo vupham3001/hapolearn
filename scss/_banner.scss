@@ -16,6 +16,7 @@
   letter-spacing: -0.05em;
   color: $content_hapolearn_title;
   line-height: 50px;
+  margin-bottom: 10px;
 }
 
 .content-hapolearn-subtitle {
@@ -23,6 +24,7 @@
   color: $content_hapolearn_title;
   font-weight: 900;
   line-height: 40px;
+  margin-bottom: 10px;
 
   .hapo-logo {
     width: 49px;
@@ -37,6 +39,7 @@
   line-height: 25px;
   letter-spacing: -0.05em;
   color: $content_hapolearn;
+  margin-bottom: 20px;
 }
 
 .button-hapolearn {
@@ -63,11 +66,14 @@
   .content-hapolearn-title {
     font-size: 28px;
     line-height: 37px;
+    margin-bottom: 0px;
   }
 
   .content-hapolearn-subtitle {
     font-size: 28px;
     font-weight: 600;
+    margin-bottom: 0px;
+
     .hapo-logo {
       display: inline-block;
       width: 35px;
@@ -80,7 +86,7 @@
     font-weight: 400;
     line-height: 20px;
     margin-top: 12px;
-    margin-bottom: 29px;
+    margin-bottom: 10px;
   }
 
   .button-hapolearn {
@@ -96,17 +102,20 @@
   }
 
   .content-of-hapolearn-banner {
-    margin-top: 445px !important;
+    margin-top: 400px !important;
     margin-left: 59px;
   }
 
   .content-hapolearn-title {
     font-size: 25px;
+    margin-bottom: -8px;
   }
 
   .content-hapolearn-subtitle {
     font-size: 25px;
     border: 0.5px;
+    margin-bottom: -13px;
+
     .hapo-logo {
       width: 25px;
       height: 23px;
@@ -116,8 +125,7 @@
   .content-hapolearn {
     font-size: 16px;
     font-weight: 400;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
   }
 
   .button-hapolearn {

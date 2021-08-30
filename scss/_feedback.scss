@@ -1,141 +1,163 @@
 .feedback {
-  width: 100%;
-  height: 720px;
   font-family: $font_UTM_BryantLG;
 
-  .title-feedback {
-    font-size: 80px;
-    font-weight: 700;
-    color: $content_hapolearn_title;
-    margin-top: 15%;
-
-    .title-feedback-border {
-      border-bottom: 6px solid $background_button_hapolearn_banner;
-    }
+  .title-underline {
+    margin-top: 5%;
+    margin-bottom: 2%;
   }
 
-  .content-feedback {
+  .custom-underline-textcourse {
+    font-size: 80px;
+    border-bottom: 6px solid $card-title_color;
+  }
+
+  .feedback-intro {
     width: 705px;
-    height: 71px;
+    color: $content_hapolearn;
     font-size: 25px;
-    font-weight: 400;
+    line-height: 31px;
     text-align: center;
+    letter-spacing: -0.02em;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3%;
   }
 
-  .second {
-    margin-top: 6%;
-
-    .content-feedback-slide {
-      text-align: start;
-      width: 497px;
-      height: 90px;
-      font-size: 16px;
-      font-weight: 400;
-      border-left: 5px solid $boder-left-content;
-    }
+  .slick-slider {
+    overflow: visible;
   }
 
-  .profile {
-    margin-top: 3.5%;
-  }
-
-  .avatar {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-right: 10px;
-    margin-top: 3%;
-  }
-
-  .name-user {
-    font-size: 20px;
-    font-weight: 700;
-    color: $content_hapolearn_title;
-  }
-
-  .role {
-    font-size: 16px;
-  }
-
-  .star {
-    font-size: 14px;
-    color: $star-color;
-  }
-
-  .btn-page {
+  .slide-arrow {
     position: absolute;
     top: 45%;
+    margin-top: -15px;
+    cursor: pointer;
+    color: $color-gray-arrow;
+  }
+
+  .next-arrow {
+    z-index: 2;
+    right: 0;
     width: 30px;
     height: 30px;
-    border-radius: 50px;
-    background-color: $white_color;
-    border: 0.5px solid $boder-aroww-circle;
-    margin-left: -12px;
-    margin-right: -12px;
-  }
-
-  .btn-prev-page {
-    z-index: 2;
-    left: 0px;
-  }
-
-  .btn-next-page {
-    z-index: 2;
-    right: 0px;
-  }
-
-  .border-content {
-    border-radius: 10px;
+    background: $white_color;
     border: 0.5px solid $boder-aroww-circle;
     box-sizing: border-box;
+    border-radius: 50%;
+  }
+
+  .prev-arrow {
+    z-index: 2;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background: $white_color;
+    border: 0.5px solid $boder-aroww-circle;
+    box-sizing: border-box;
+    border-radius: 50%;
+  }
+
+  .feedback-border-text {
+    border: 0.5px solid $color-border-text;
+    box-sizing: border-box;
+    border-radius: 10px;
     width: 100%;
+  }
+
+  .feedback-border-text:before,
+  .feedback-border-text:after {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 80px;
+    left: 50px;
+    border: 1px solid $color-border-text;
+    background-color: $white_color;
+    transform: rotate( 45deg);
+    border-top: transparent;
+    border-left: transparent;
+  }
+
+  .feedback-border-text:after {
+    z-index: -1;
+    bottom: 79px;
+    left: 50px;
+
+  }
+
+  .feedback-text {
+    text-align: start;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.05em;
+    color: $color-text-feedback;
+    border-left: 5px solid $boder-left-content;
+    margin: 20px;
+    padding: 20px;
+    padding-right: 0px;
+  }
+
+  .user-info {
+    margin-left: 20px;
+    margin-top: 25px;
+
+    .user-name {
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    .user-role {
+      font-size: 16px;
+      line-height: 20px;
+      color: $content_hapolearn;
+    }
+
+    img {
+      width: 60px;
+    }
+
+    .user-rating {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: $star-color;
+    }
   }
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 769px) {
   .feedback {
-    height: 519px;
-
-    .title-feedback {
-      font-size: 50px;
-      margin-top: 10%;
+    .title-underline {
+      margin-top: -60%;
     }
 
-    .content-feedback {
+    .custom-underline-textcourse {
+      font-size: 50px;
+    }
+
+    .feedback-intro {
+      width: 100%;
       font-size: 18px;
       line-height: 22px;
     }
   }
 }
 
-@media (max-width: 575px) {
+@media screen and (max-width: 575px) {
   .feedback {
-    height: 435px;
-    width: 100%;
-
-    .title-feedback {
-      font-size: 40px;
+    .title-underline {
       margin-top: -30%;
     }
 
-    .content-feedback {
+    .custom-underline-textcourse {
+      font-size: 40px;
+    }
+
+    .feedback-intro {
       font-size: 16px;
+      line-height: 20px;
       width: 100%;
     }
-
-    .second {
-      .content-feedback-slide {
-        font-size: 14px;
-        width: 100%;
-      }
-
-      .avatar {
-        width: 45px;
-        height: 45px;
-      }
-    }
-  }
+  } 
 }

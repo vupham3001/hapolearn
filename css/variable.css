@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'GooglrSans-Black';
+  src: url("../style/font/GoogleSans-Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'GoogleSans-BlackItalic';
+  src: url("../style/font/GoogleSans-BlackItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'GoogleSans-Bold';
+  src: url("../style/font/GoogleSans-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'GoogleSans-Italic';
+  src: url("../style/font/GoogleSans-Italic.otf") format("opentype");
+}
+/*# sourceMappingURL=variable.css.map */
