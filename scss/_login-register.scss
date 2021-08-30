@@ -37,6 +37,10 @@
     border-radius: 50%;
   }
 
+  .button-close:hover {
+    opacity: 0.6;
+  }
+
   .body-login {
     width: 400px;
 
@@ -62,10 +66,11 @@
       position: relative;
     }
 
-    .form-check-input:hover {
-      background-color: $card-title_color;
+    .form-check-input {
+      .custom-check-label:before {
+        background-color: $card-title_color;
+      }
     }
-
     .forgot-pass {
       position: absolute;
       right: 0;
@@ -99,6 +104,7 @@
     }
 
     .google-icon {
+      color: $white_color;
       font-size: 30px;
       margin-top: 15%;
     }
@@ -113,6 +119,7 @@
     }
 
     .facebook-icon {
+      color: $white_color;
       font-size: 30px;
       margin-top: 15%;
     }

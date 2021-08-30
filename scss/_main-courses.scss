@@ -59,6 +59,10 @@
     margin-left: 20%;
   }
 
+  .btn-card-primary:hover {
+    color: $color-title-chatbox;
+  }
+
   .other-courses {
     font-size: 60px;
     font-family: $font_UTM_BryantLG;
@@ -103,6 +107,10 @@
       height: 26px;
     }
   }
+
+  .extend-courses:hover {
+    transform: scale(1.5);
+  }
 }
 
 @media (max-width: 769px) and (min-width: 576px) {
@@ -140,6 +148,7 @@
     .btn-card-primary {
       font-size: 10px;
       border-radius: 22px;
+      margin-left: 6%;
     }
   }
 }
@@ -153,17 +162,20 @@
     height: 163px;
   }
 
-  .card-title {
-    font-size: 20px;
-    line-height: 24.12px;
-  }
+  .card-body {
+    .card-title {
+      font-size: 20px;
+      line-height: 24.12px;
+    }
 
-  .card-text {
-    font-size: 14px;
-  }
+    .card-text {
+      font-size: 14px;
+    }
 
-  .btn-card-primary {
-    font-size: 18px !important;
+    .btn-card-primary {
+      font-size: 18px !important;
+      margin-left: 33%;
+    }
   }
 
   .main-courses {

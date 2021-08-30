@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HapoLearn</title>
+    <link  rel="shortcut icon" href="./assets/img/hapo_logo.png" type="image/png" />
     <!-- import bootstrap css-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -17,7 +18,7 @@
 </head>
 <body>
     <!-- header -->
-    <header class="header">
+    <header class="container-fluid header">
         <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -26,9 +27,9 @@
                 <a class="header-logo navbar-branch" href="#">
                     <img src="./assets/img/Hapolearn_header.png" alt="HapoLearn">
                 </a>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <div class="collapse navbar-collapse ml-auto" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a class="nav-link active" href="">HOME</a></li>
+                        <li class="nav-item active"><a class="nav-link nav-link-active active" href="">HOME</a></li>
                         <li class="nav-item"><a class="nav-link" href="">ALL COURSE</a></li>
                         <li class="nav-item"><a class="nav-link login" href="#">LOGIN/REGISTER</a></li>
                         <li class="nav-item"><a class="nav-link" href="">PROFILE</a></li>
@@ -175,47 +176,24 @@
 
         <!-- feedback -->
         <div class="container feedback">
-            <div class="row title-feedback justify-content-center"><span class="title-feedback-border">Feedback</span></div>
-            <div class="content-feedback">What other students turned professionals have to say about us
-                after learning with us and reaching their goals
+            <div class="row title-underline justify-content-center">
+                <span class="custom-underline-textcourse">Feedback</span>
             </div>
-            <div id="carouselFeedbackIndicators" class="carousel slide" data-ride="carousel">
-                <div class="mt-lg-4 mt-md-2 mt-0 carousel-inner feedback-slide">
-                    <div class="justify-content-center mt-5 border-left border-right carousel-item active">
-                        <div class="d-flex justify-content-center py-2 border-content">
-                            <div class="second py-2 px-2">
-                                <div class="container content-feedback-slide">“A wonderful course on how to start. Eddie beautifully conveys all essentials of
-                                    a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
+            <div class="feedback-intro">What other students turned professionals have to say about us after learning with us and reaching their goals</div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class=" mt-lg-4 mt-md-2 carousel-inner feedback-slide mt-0">
+                    <div class="carousel-item active">
+                        <div class="container mt-5">
+                            <div class="d-flex row ml-auto mr-auto">
+                                <div class="mt-2 m-0 p-0 feedback-border-text ">
+                                    <p class="feedback-text">“A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”</p>
                                 </div>
-                                <div class="d-flex profile">
-                                    <img class="avatar" src="./assets/img/avatar.jpg" alt="avatar">
-                                    <div class="justify-content-between py-1 pt-2">
-                                        <span class="name-user">Hoang Anh Nguyen</span>
-                                        <div class="role">PHP</div>
-                                        <div class="d-flex star">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="far fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="justify-content-center mt-5 border-left border-right carousel-item">
-                        <div class="d-flex justify-content-center py-2 border-content">
-                            <div class="second py-2 px-2">
-                                <div class="container content-feedback-slide">“A wonderful course on how to start. Eddie beautifully conveys all essentials of
-                                    a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
-                                </div>
-                                <div class="d-flex profile">
-                                    <img class="avatar" src="./assets/img/avatar.jpg" alt="avatar">
-                                    <div class="justify-content-between py-1 pt-2">
-                                        <span class="name-user">Vu Pham Truong</span>
-                                        <div class="role">Python</div>
-                                        <div class="d-flex star">
+                                <div class="d-flex flex-row user-info">
+                                    <img class="rounded-circle" src="./assets/img/avatar.jpg">
+                                    <div class="d-flex flex-column justify-content-start ml-2">
+                                        <span class="d-block font-weight-bold user-name">Hoang Anh Nguyen</span>
+                                        <span class="user-role text-black-50">PHP</span>
+                                        <div class="user-rating">
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
@@ -227,18 +205,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="justify-content-center mt-5 border-left border-right carousel-item">
-                        <div class="d-flex justify-content-center py-2 border-content">
-                            <div class="second py-2 px-2">
-                                <div class="container content-feedback-slide">“A wonderful course on how to start. Eddie beautifully conveys all essentials of
-                                    a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
+                    <div class="carousel-item">
+                        <div class="container mt-5">
+                            <div class="d-flex row ml-auto mr-auto">
+                                <div class="mt-2 m-0 p-0 feedback-border-text ">
+                                    <p class="feedback-text">“A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”</p>
                                 </div>
-                                <div class="d-flex profile">
-                                    <img class="avatar" src="./assets/img/avatar.jpg" alt="avatar">
-                                    <div class="justify-content-between py-1 pt-2">
-                                        <span class="name-user">Huy Pham Van</span>
-                                        <div class="role">C++</div>
-                                        <div class="d-flex star">
+                                <div class="d-flex flex-row user-info">
+                                    <img class="rounded-circle" src="./assets/img/avatar.jpg">
+                                    <div class="d-flex flex-column justify-content-start ml-2">
+                                        <span class="d-block font-weight-bold user-name">Vu Pham Truong</span>
+                                        <span class="user-role text-black-50">Python</span>
+                                        <div class="user-rating">
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
@@ -250,12 +228,29 @@
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselFeedbackIndicators" role="button" data-slide="prev">
-                        <button class="btn-page btn-prev-page"><i class="fas fa-angle-left"></i></button>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselFeedbackIndicators" role="button" data-slide="next">
-                        <button class="btn-page btn-next-page"><i class="fas fa-angle-right"></i></button>
-                    </a>
+                    <div class="carousel-item">
+                        <div class="container mt-5">
+                            <div class="d-flex row ml-auto mr-auto">
+                                <div class="mt-2 m-0 p-0 feedback-border-text ">
+                                    <p class="feedback-text">“A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”</p>
+                                </div>
+                                <div class="d-flex flex-row user-info">
+                                    <img class="rounded-circle" src="./assets/img/avatar.jpg">
+                                    <div class="d-flex flex-column justify-content-start ml-2">
+                                        <span class="d-block font-weight-bold user-name">Huy Pham Van</span>
+                                        <span class="user-role text-black-50">C++</span>
+                                        <div class="user-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -374,10 +369,14 @@
                                 <p class="login-with-btn">Login with</p>
                             </div>
                             <div class="d-flex flex-column justify-content-center align-items-center google">
-                                <p><i class="fab fa-google-plus-g google-icon"></i> Google</p>
+                                <p>
+                                    <a href="#"><i class="fab fa-google-plus-g google-icon"></i></a> Google
+                                </p>
                             </div>
                             <div class="d-flex flex-column justify-content-center align-items-center facebook">
-                                <p><i class="fab fa-facebook-f facebook-icon"></i> Facebook</p>
+                                <p>
+                                    <a href="#"><i class="fab fa-facebook-f facebook-icon"></i></a> Facebook
+                                </p>
                             </div>
                         </div>
 
